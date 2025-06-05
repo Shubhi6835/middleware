@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
 
-//create a url encoded body like our form content.
+//create a url encoded body like our form content. used middleware here.
 app.use(bodyParser.urlencoded({extended:true}));
 
 

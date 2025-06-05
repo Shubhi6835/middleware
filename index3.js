@@ -12,3 +12,9 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
+
+function logger(req, res, next){
+  console.log("The url is: " + req.url);
+  console.log("The method is: " + req.method);
+  next();
+}
